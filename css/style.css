@@ -503,10 +503,12 @@ tr td a p {
 
 .about-me .about-content {
     padding: 30px;
+    text-align: justify;
 }
 
 .future-plans {
     padding: 20px 80px;
+    text-align: justify;
 }
 
 /* Contact Section */
