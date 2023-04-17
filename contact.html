@@ -27,7 +27,7 @@
                     <h2>Contact Me.</h2>
                 </div>
                 <div class="contact-form">
-                    <form method="post" action="send-email.php">
+                    <form method="POST" action="https://formspree.io/f/xlekoqqr">
                         <div>
                             <label for="name">Name:</label>
                             <input type="text" name="name" id="name">
@@ -37,15 +37,11 @@
                             <input type="email" name="email" id="email">
                         </div>
                         <div>
-                            <label for="subject">Subject:</label>
-                            <input type="text" name="subject" id="subject">
-                        </div>
-                        <div>
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="msg"></textarea>
+                            <label for="message">Your message:</label>
+                            <textarea id="message" name="message"></textarea>
                         </div>
                         <button type="submit">Send</button>
-                    </form>                    
+                    </form>                   
                 </div>
             </section>
         </main>
