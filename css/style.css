@@ -63,29 +63,86 @@ header nav menu li:hover a{
 
 /* Main */
 
-.hero{
-    display:flex;
+.hero {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #072d67;
     height: 100vh;
     padding: 100px 0;
+    background-image: linear-gradient(to bottom, #072d67, black);
 }
 
-.hero h1{
+.hero h1 {
     font-size: 92px;
-    color:#f4f4f4;
+    color: #f4f4f4;
     text-shadow: 4px 2px 4px rgb(0 0 0 /50%);
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.hero h3{
-    color:#f4f4f4;
+.hero h3 {
+    color: #f4f4f4;
     text-shadow: 4px 2px 4px rgb(0 0 0 /50%);
-    margin: 50px;
+    margin-top: 50px;
+    position: relative;
 }
+
+.hero .arrows {
+    position: flex;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 80px;
+    /* cursor:pointer; */
+}
+
+
+.hero .arrows::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hero .arrows::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(225deg);
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hero .scroll-down {
+    color: #fff;
+    position: flex;
+    margin-top:40px;
+    font-size: 20px;
+    font-family: Consolas;
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+
+}
+  
+  .hero:hover .arrows::after,  .hero:hover .arrows::before, .hero:hover .scroll-down{
+    opacity: 1;
+}
+
+
 
 /* Summary */
 
