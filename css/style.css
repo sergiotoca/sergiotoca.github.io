@@ -132,10 +132,9 @@ header nav menu li:hover a{
     position: flex;
     margin-top:40px;
     font-size: 20px;
-    font-family: Consolas;
+    font-family: Consolas, monospace;
     opacity: 0;
     transition: opacity 2.5s ease-in-out;
-
 }
   
   .hero:hover .arrows::after,  .hero:hover .arrows::before, .hero:hover .scroll-down{
@@ -192,6 +191,7 @@ header nav menu li:hover a{
 .sum-content p {
     text-align: justify;
     padding: 10px;
+    text-indent: 20px;
 }
 
 /* Skills */
@@ -485,7 +485,7 @@ tr td a p {
     height: 100%;
     background-image:url(../img/Sergio.jpg);
     background-size:cover;
-    background-position: 0px 50%;
+    background-position: 50% 50%;
     background-color: #0e0e0e;
     opacity: 0.7; /* Change the opacity value as needed */
     z-index: -1;
