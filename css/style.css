@@ -470,7 +470,6 @@ tr td a p {
     height: 50%;
     width: 50%;
     margin-left: 25%;
-
 }
 
 .contact-me .contact-title h2{
@@ -483,7 +482,6 @@ tr td a p {
     display: flex;
     align-items: center;
     justify-content: center;      
-
 }
 
 .contact-me .contact-form form {
@@ -541,6 +539,23 @@ tr td a p {
 .contact-me .contact-form form button[type="submit"]:hover {
     background-color: #072d67; /* Dark blue */
 }
+
+@media screen and (max-width: 750px) {
+    .contact-me {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-me .contact-form form {
+        width: 90%;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .contact-me .contact-form form div {
+        margin: 20px;
+    }
+}
+
   
   
 
