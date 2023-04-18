@@ -647,6 +647,9 @@ tr td a p {
 }
 
 @media screen and (max-width: 750px) {
+    .education{
+        margin-top: 10%;
+    }
     .professional, .education{
         display: block;
         min-height: auto;
