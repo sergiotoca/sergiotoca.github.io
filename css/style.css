@@ -545,6 +545,18 @@ tr td a p {
     .proj-section{
         margin-top: 10%;
     }
+    table{
+        max-width: 100%;
+    }
+    tr td{
+        max-width: 80%;
+    }
+    tr td a img {
+        max-width: 100%; /* Make the image responsive */
+        margin: 0 auto 10px; /* Center the image and add some bottom margin */
+        border-radius: 5px;
+    }
+    
 }
 
 /* Experience section */
