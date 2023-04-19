@@ -497,11 +497,9 @@ header nav menu li:hover a{
 
 
 /* Projects page */
-
 .proj-section{
     align-items: center;
 }
-
 .proj-section h1{
     text-align: center;
 }
@@ -510,18 +508,15 @@ table {
     max-width: 1600px; /* Optional, set the maximum width of the table */
     margin: 0 auto; /* Center the table */
 }
-  
 tr td {
     width: 25%; /* Set each column to occupy 50% of the table width */
     padding: 20px;
     box-sizing: border-box;
 }
-
 tr td a {
     text-decoration: none;
     color: #f4f4f4;
 }
-  
 tr td a img {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Prevent the image from stretching */
@@ -531,7 +526,6 @@ tr td a img {
     filter:grayscale(50%);
     transition: all 0.5s linear;
 }
-
 tr td a img:hover {
     filter: grayscale(0%);
     box-shadow: 0px 0px 20px #f4f4f4c9;
@@ -540,24 +534,29 @@ tr td a img:hover {
 tr td a p {
     text-align: center;
 }
-
 @media (max-width: 767px) {
-    .proj-section{
+    .proj-section {
         margin-top: 10%;
     }
-    table{
+    table {
         max-width: 100%;
     }
-    tr td{
-        max-width: 80%;
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    tr td {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 20px;
     }
     tr td a img {
-        max-width: 100%; /* Make the image responsive */
-        margin: 0 auto 10px; /* Center the image and add some bottom margin */
+        margin: 0 auto 10px;
         border-radius: 5px;
     }
-    
 }
+
+
 
 /* Experience section */
 
@@ -731,6 +730,27 @@ tr td a p {
     text-align: justify;
 }
 
+@media screen and (max-width: 750px) {
+    .about-me{
+        margin-top: 10%;
+        display: block;
+        min-height: auto;        
+    }
+    .about-title{
+        min-height: 150px;
+    }
+
+    .about-content, .future-plans {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .about-content h2, .future-plans h2{
+        text-align: center;
+    }
+
+}
+
 /* Contact Section */
 
 .contact-me {
@@ -821,8 +841,8 @@ tr td a p {
 
 @media screen and (max-width: 750px) {
     .contact-me {
-        grid-template-columns: 1fr;
-        margin-top: 10%;
+        display: block;
+        margin-top: 11%;
     }
 
     .contact-me .contact-form form {
