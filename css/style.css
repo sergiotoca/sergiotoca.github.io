@@ -313,7 +313,7 @@ header nav menu li:hover a{
 
 .sum-content {
     margin: 10px;
-    padding: 10px;
+    padding: 50px;
 }
 
 .sum-content p {
@@ -379,7 +379,7 @@ header nav menu li:hover a{
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
-    width: 40%;
+    width: 85%;
 }
 
 .skills .chart-container .skill-chart h2 {
@@ -405,7 +405,7 @@ header nav menu li:hover a{
 
 .skills .chart-container .skill-chart .skill-bar {
     display: inline-block;
-    width: 200px;
+    width: 80%;
     height: 20px;
     background-color: #f5f5f5;
     position: relative;
@@ -754,108 +754,108 @@ tr td a p {
 /* Contact Section */
 
 .contact-me {
-    display: grid;
-    grid-template-columns: repeat(2 ,50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 40vh;
-    align-items: center;    
-}
-
-.contact-me .contact-title {
+    padding: 50px;
+    background-color: #f6f6f6;
+    }
+    
+    .contact-me .contact-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#d0d0d0;
-    border-radius: 50px;
-    height: 50%;
-    width: 50%;
-    margin-left: 25%;
-}
-
-.contact-me .contact-title h2{
+    background-color: #ffffff;
+    border-radius: 20%;
+    height: 150px;
+    width: 300px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact-me .contact-title h2 {
     font-size: 40px;
-    color: #0e0e0e; 
-    text-shadow: 4px 2px 4px rgb(0 0 0 /20%);   
-}
-
-.contact-me .contact-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;      
-}
-
-.contact-me .contact-form form {
-    background-color:#d0d0d0;
     color: #0e0e0e;
-    width: 70%;
-    min-height: 75vh;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.contact-me .contact-form form div {
+    text-shadow: 4px 2px 4px rgb(0 0 0 /20%);
+    }
+    
+    .contact-me .contact-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 40px;
-}
-
-.contact-me .contact-form form label {
-    display: block;
-    width: 100px;
-    text-align: right;
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.contact-me .contact-form form input,
-.contact-me .contact-form form textarea {
-    flex-grow: 1;
+    width: 100%;
+    max-width: 800px;
+    }
+    
+    .contact-me .contact-form form {
+    background-color: #ffffff;
+    color: #0e0e0e;
+    width: 100%;
+    padding: 30px;
     border-radius: 10px;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.contact-me .contact-form form textarea {
-    height: 300px;
-    resize: vertical;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact-me .contact-form form label {
+    display: block;
     margin-bottom: 10px;
-}
-
-.contact-me .contact-form form button[type="submit"] {
-    background-color: #444f5e; 
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    .contact-me .contact-form form input,
+    .contact-me .contact-form form textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    }
+    
+    .contact-me .contact-form form textarea {
+    height: 200px;
+    }
+    
+    .contact-me .contact-form form button[type="submit"] {
+    background-color: #072d67;
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    float: right;
-    margin-top: 10px;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
-}
-  
-.contact-me .contact-form form button[type="submit"]:hover {
-    background-color: #072d67; /* Dark blue */
-}
-
-@media screen and (max-width: 750px) {
-    .contact-me {
-        display: block;
-        margin-top: 11%;
     }
+    
+    .contact-me .contact-form form button[type="submit"]:hover {
+    background-color: #444f5e;
+    }
+    
+    @media screen and (max-width: 750px) {
+        .contact-me {
+        padding: 20px;
+        margin-top: 10%;
+        }
+    
+        .contact-me .contact-title {
+        height: 100px;
+        width: 200px;
+        margin-bottom: 30px;
+        }
 
-    .contact-me .contact-form form {
-        width: 90%;
-        margin: 10px;
+        .contact-me .contact-title h2 {
+            font-size: 30px;
+        }
+    
+        .contact-me .contact-form form {
+        padding: 20px;
         font-size: 14px;
+        }
     }
-
-    .contact-me .contact-form form div {
-        margin: 20px;
-    }
-}
-
   
   
 
